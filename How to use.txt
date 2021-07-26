@@ -6,27 +6,20 @@ Hello Astro:
 ECRIRE "Hello Astro"
 ECRIRE "Hello" + "Astro"
 
-Variables :
+Variables : 
 
 var a = "hi im Astro"
 ECRIRE (a)
 
 
-Types :
-
-list :
-
-[]
-[1,2]+3
-[1,2,3]*[4,5,6]
-
+Types : 
 -ENTIER :
 
 VAR a = 1
 VAR b = 3
 ECRIRE (a+b)
 
--REEL :
+-REEL : 
 
 VAR a = 2.5
 ECRIRE (a)
@@ -36,7 +29,7 @@ ECRIRE (a)
 VAR a = "hi im Astro and im 19 years old"
 ECRIRE (a)
 
--BOOL :
+-BOOL : 
 
 VAR a = VRAI
 ECRIRE (a)
@@ -49,7 +42,7 @@ VAR b=3
 VAR c=(((a+b)*2^3)/4)-10
 
 
--Comparison :
+-Comparison : 
 
 10 < 9
 10 <= 9
@@ -58,41 +51,46 @@ VAR c=(((a+b)*2^3)/4)-10
 9 >= 8
 9 != 10
 
-a < b
-a != b
+a < b 
+a != b 
 a = a
-a != A
+a != A 
 
-VRAI == VRAI
-VRAI != FAUX
+VRAI == VRAI 
+VRAI != FAUX 
 
 
 Conditionals
 -Normal:
 
-SI 5==4 FAIRE (123 SINON_SI 5==5 FAIRE 321 SINON 456
-ou :
-SI 5==4 FAIRE;
-ECRIRE (123);
-SINON_SI 5==5 FAIRE;
-ECRIRE (321);
+SI 5==4 FAIRE (123) SINON_SI 5==5 FAIRE ECRIRE (321) SINON 456
+ou : 
+
+SI 5==4 FAIRE
+    ECRIRE (123)
+SINON_SI 5==5 FAIRE
+    ECRIRE (321)
 SINON 456
 
 
 Loops :
 
-si loop
+si loop 
 
-VAR a = 1
-POUR i = 1 A 6 FAIRE VAR a = a * i
+POUR i = 1 A 6 FAIRE VAR i = i *2 ; ECRIRE (i)
+
+VAR r = 1
+POUR i = 5 A 0 PAS -1 FAIRE VAR r = r * i
+ECRIRE (r)
+
 
 tant_que loop
 
 VAR i = 0
-TANT_QUE i <1000 FAIRE  VAR i = i + 1
+TANT_QUE i <1000 FAIRE  VAR i = i + 1 
 
 
-Fonctions :
+Fonctions : 
 
 
 
@@ -105,35 +103,40 @@ built-in function :
 
 
 
-#PI
+PI :
 VAR radius = 15
 ECRIRE (VAR c = radius * 2 * PI)
 
-#ECRIRE & LIRE
+ECRIRE & LIRE :
 
 VAR name = LIRE()
 ECRIRE (name)
 
-#clear
+clear :
 VAR a = 2
 ECRIRE (a)
 CLEAR()
 
-#IS_NUM
+IS_NUM : 
 
 IS_NUM(2)
 
-#IS_STR
+IS_STR : 
 
 IS_STR("b")
 
-#IS_LIST
+IS_LIST :
 
 IS_LIST([])
 
-#IS_FUN
+IS_FUN :
 
 IS_FUN(PRINT)
 
+list :
+
+[] 
+[1,2]+3
+[1,2,3]*[4,5,6]
 
 
